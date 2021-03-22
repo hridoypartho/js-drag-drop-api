@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag And Drop Project</title>
+
+    <style>main {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .drag-container,
+        .drop-container {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .drag-container {
+            margin-bottom: 20px;
+        }
+
+        .drag-container div,
+        .drop-container div {
+            width: 120px;
+            height: 120px;
+            background-color: orchid;
+            margin-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: 2em sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+
+        }
+
+        .dragging {
+            opacity: 0.2;
+        }
+
+        .drag-select {
+            border: 1px dashed red;
+        }
+        .notification {
+            background-color:#4fdbba;
+            color:white;
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+        }</style>
+</head>
+
+<body>
+    <div class="notification"> You Won</div>
+    <main>
+        <section class="drag-container"></section>
+        <section class="drop-container"></section>
+    </main>
+
+    <script src="/drag-drop-html5-2.e31bb0bc.js"></script>
+</body>
+
+</html>
